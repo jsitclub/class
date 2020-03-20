@@ -1,0 +1,16 @@
+body{
+    background:gold;
+    margin-left:100px;
+}
+
+li{
+    margin:20px;
+}
+
+table,tr,td{
+    border:1px solid;
+}
+
+.exam{
+    padding-left:50px;
+}

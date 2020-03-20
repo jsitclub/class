@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <style>
+        
+        </style>
+
+    </head>
+	<body>
+        <a href="/index.html">Home</a>
+        <p>
+        다음에 설명하는 내용은 반드시 해당 위치에만 사용하는것은 아니지만 대체로 따르는것이 유리하다.<br>
+        즉 &lt;head&gt; 태그 안에 &lt;p&gt;나 &lt;div&gt; 를 사용할 수도 있고, &lt;body&gt;태그 안에 
+        &lt;meta&gt;를 사용할 수도 있으나 검색에서 불리하거나 정리의 복잡성으로 인해 대체로 아래와 같이 정리한다.    
+        </p>
+        <li>&lt;div&gt; &lt;span&gt; : 영역을 정의하는 태그로 div는 블록으로 span은 문장안에서 범위로 지정할 수 있다.</li>
+        
+        <h1 id ="head-title">&lt;head&gt;</h1>    
+        
+        <li class="sub-title">&lt;meta&gt; : 문서정보 지정</li>
+        <ol>
+            <li>태그의 속성 이용</li>
+            <span class="exam"> 형식) &lt;meta http-equiv="항목이름" name = "정보이름" content="값"&gt;</span><br>
+            <span class="exam">  예) &lt;meta http-equiv="copyright" content="jsitclub"&gt;</span><br>
+            <span class="exam">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="keywords" content="HTML,CSS"&gt;</span><br>
+
+            <li>문자셋 지정하기</li>
+            <span class="exam"> 예) &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8"&gt;</span><br>
+        </ol>
+        <li class="sub-title">&lt;title&gt; : 문서제목 지정</li>
+        
+        
+        <h1 id="body-title">&lt;body&gt;</h1>  
+        
+        <li class="sub-title">&lt;h1&gt; ~ &lt;h6&gt; : 단락제목 지정</li>
+        <li class="sub-title">&lt;p&gt; : 단락정의</li>        
+        <li class="sub-title">&lt;br&gt; : 줄바꾸기</li>
+        <li class="sub-title">&lt;hr&gt; : 수평선</li>
+        <li class="sub-title">&lt;blockquote&gt; &lt;q&gt; : 인용문</li>
+        <li class="sub-title">&lt;img&gt; : 이미지</li>
+        
+        
+        
+        <h1 id ="semantic-title">HTML5의 시맨틱 태그</h1>  
+        
+        
+        <li>HTML5부터 &lt;div&gt; 대신 사용을 권장하는 구조.</li>
+        <li>구조를 정의하는것으로 모양이 바뀌는것은 아님.</li>
+        <li>다양한 형태로 구성될 수 있다.</li>
+        <img src="/img/semantic.jfif">
+            
+        <li>HTML5에서 추가된 의미 요소</li>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>의미 요소</th>
+                    <th>설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>HTML 문서나 섹션(section) 부분에 대한 헤더(header)를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>HTML 문서 사이를 탐색할 수 있는 링크(link)의 집합을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>HTML 문서에서 독립적인 하나의 기사(article) 부분을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>HTML 문서에서 섹션(section) 부분을 정의함.</td>
+                </tr>
+                
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>HTML 문서에서 페이지 부분 이외의 콘텐츠(content)를 정의함.&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>HTML 문서나 섹션(section) 부분에 대한 푸터(footer)를 정의함.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>HTML 문서의 주요 콘텐츠(content)를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>HTML 문서에서 그래픽과 비디오 등의 독립적인 콘텐츠(content)를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>figure 요소를 위한 캡션을 정의함.</td>
+                </tr>
+                
+                <tr>
+                    <td>&lt;bdi&gt;</td>
+                    <td>기본 출력방향과는 다른 방향으로 출력되는 텍스트를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>하이라이팅된 텍스트를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>사용자가 보거나 숨길 수 있는 추가적인 설명문을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>details 요소에 나타날 내용을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;dialog&gt;</td>
+                    <td>다이얼로그(dialog) 박스나 다이얼로그 윈도우를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;menuitem&gt;</td>
+                    <td>사용자가 팝업 메뉴(popup menu)를 통해 선택할 수 있는 메뉴의 아이템(menu item)을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>정해진 범위 내의 스칼라 치수를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>작업에 대한 진행 정도를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ruby&gt;</td>
+                    <td>루비(ruby) 문자를 선언함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;rt&gt;</td>
+                    <td>본문 위에 나타날 문자를 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;rp&gt;</td>
+                    <td>루비(ruby) 문자를 지원하지 않는 브라우저에서만 나타날 내용을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>날짜와 시간을 정의함.</td>
+                </tr>
+                <tr>
+                    <td>&lt;wbr&gt;</td>
+                    <td>br 요소와는 달리 긴 단어가 화면의 맨 끝에 오면 상황에 따라 줄 바꿈 할 곳을 미리 정의함.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        
+        <li><a href="https://www.w3schools.com/html/default.asp">시맨틱으로 구성된 페이지</a></li>            
+ 
+        
+	</body>
+</html>
