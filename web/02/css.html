@@ -6,46 +6,51 @@
 
 	</head>
 	<body>
-        <a href="/class/index.html">Home</a>
-        <br><a href="./ex-css.html">예제</a>
-        <br><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank"> 직접해보기</a>            
+        <nav >
+            <ul>
+            <li><a href="/class/index.html">Home</a></li>
+            <li><a href="./ex-css.html">실습 - css로 꾸며보기</a></li>
+            <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">코딩연습</a></li>
+            </ul>                
+        </nav>
         <h1> CSS 기초 문법 </h1>
-        
-        <li>속성:<태그 속성="값">의 형태                
-        <li>style 바꾸는4가지 방법</li>
-        <ol>
-            <li>태그의 속성 이용</li>
-            <span class="exam"> 예) &lt;img src="aa.jpg" width="300"&gt;</span>
+        <ul>
+            <li class="item-title">속성:<태그 속성="값">의 형태                
+            <li class="item-title">style 바꾸는 방법</li>
+            <ul  style="list-style-type:circle;">
+                <li>태그의 속성 이용</li>
+                <span class="exam"> 예) &lt;img src="aa.jpg" width="300"&gt;</span>
 
-            <li>style 속성 이용</li>
-            <span class="exam"> 예) &lt;p style="color:purple"&gt;</span>
+                <li>style 속성 이용</li>
+                <span class="exam"> 예) &lt;p style="color:purple"&gt;</span>
 
-            <li>style 태그 이용</li>
-            <span class="exam"> 예) </span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; div{</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; /style&gt;</span>
+                <li>style 태그 이용</li>
+                <span class="exam"> 예) </span><br>
+                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; div{</span><br>
+                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;</span><br>
+                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><br>
+                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; /style&gt;</span>
 
-            <li>외부 css파일 이용</li>
-            <span class="exam"> 예) &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>
-            
-            <li>우선순위</li>
-            <span class="exam"> style 속성 > style 태그 > 외부css파일 > 태그의 속성</span>
+                <li>외부 css파일 이용</li>
+                <span class="exam"> 예) &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>
+
+                <li>우선순위</li>
+                <span class="exam"> style 속성 > style 태그 > 외부css파일 > 태그의 속성</span>
 
 
-        </ol>
-            <li>class 와 id</li>
+            </ul>
+                
+            <li class="item-title">class 와 id</li>
             <span class="exam"> 예) &lt;div class="red" id="red01"&gt;</span><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="red" id="red02"&gt;</span>
 
-            <li>style에서 class는 . 으로 id는 # 으로 구분한다.</li>
+            <li class="item-title">style에서 class는 . 으로 id는 # 으로 구분한다.</li>
             <span class="exam"> 예) .red{</span><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;</span><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp; #red01{</span><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;</span><br>
             <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br>
-        
+        </ul>
 	</body>
 </html>

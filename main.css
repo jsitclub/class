@@ -8,10 +8,34 @@ li{
     margin:20px;
 }
 
+nav {
+        width:800px; 
+        /*
+        text-align: center;
+        */
+    }
+
+nav ul {
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding : 30px;
+}
+
+nav ul li{
+    display:inline;
+    padding : 0 10px;
+
+}
+
 table,tr,td{
     border:1px solid;
 }
 
 .exam{
     padding-left:50px;
+}
+
+.item-title{
+    font-size:20px;
+    font-weight:bold;
 }
