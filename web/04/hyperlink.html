@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
+        <style>
+            
+        </style>
+
+    </head>
+	<body>
+        <nav >
+            <ul style="list-style-type:none;">
+            <li><a href="/class/index.html">Home</a></li>
+            <li><a href="./ex-hyperlink.html">실습 - 링크가 있는 페이지 만들기</a></li>
+            <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">코딩연습</a></li>
+            </ul>                
+        </nav>
+        <article>
+            <h1 id ="hyperlink">하이퍼 링크</h1>    
+
+            <li class="item-title"> 웹 페이지에서 다른 문서나 사이트로 이동할 수 있는 링크</li>
+            <li class="item-title">&lt;a&gt; href="링크위치" target="실행방법"> 보여질 텍스트,이미지 &lt;/a&gt;
+            <li class="item-title">링크위치</li>
+            <ul style="list-style-type:circle;">
+                <li class="sub-title"> 절대경로 : 서버의 루트위치를 기준으로 파일의 위치표시</li>    
+                <ul style="list-style-type:square;">
+                    <li> 예) http://www.test-jsitclub.com/web/05/test.jpg </li>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp; /web/05/test.jpg </li>
+                </ul>
+                <li class="sub-title"> 상대경로 : 현재페이지의 위치를 기준으로 파일의 위치표시</li>
+                <ul style="list-style-type:square;">
+                    <li>  ../ : 자신이 있는 폴더의 부모폴더 </li>
+                    <li> &nbsp;&nbsp;./ : 자신이 있는 폴더 </li> 
+                </ul>
+                
+                <li class="sub-title"> 책갈피 : 링크에 #id를 이용하여 원하는 위치로 이동</li>
+            </ul>
+            
+            <li class="item-title">target</li>
+            <ul style="list-style-type:circle;">
+                <li class="sub-title"> _blank : 새 탭에 대상페이지를 실행</li>    
+                <li class="sub-title"> _self : 현재 창에서 실행</li> 
+            </ul>
+
+            <li class="item-title"> 하이퍼링크는 글 뿐아니라 이미지 및 여러태그에 한번에 적용할 수도 있다.</li>
+        </article>
+        
+        <article>
+            <h1 id ="image">이미지</h1>    
+
+            <li class="item-title"> 웹 페이지에 이미지를 보여주는 태그</li>
+            <li class="item-title">&lt;img src="링크위치" alt="설명" &gt;
+            
+        </article>
+        
+        <article>
+            <h1 id ="audio">오디오</h1>    
+
+            <li class="item-title"> 웹 페이지에서 음악파일을 재생하는 태그</li>
+            <li class="item-title">&lt;audio src="링크위치"  controls="controls" &gt;
+            <li class="item-title">재생가능파일 : mp3,wav,ogg
+            <li class="item-title">속성</li>
+            <ul style="list-style-type:circle;">
+                <li class="sub-title"> controls="controls" : 컨트롤버튼</li>    
+                <li class="sub-title"> autoplay="autoplay" : 자동재생</li> 
+                <li class="sub-title"> loop="loop" : 반복재생</li> 
+                <li class="sub-title"> audio="muted" : 시작시 음소거</li> 
+            </ul>
+        </article>
+    
+        <article>
+            <h1 id ="video">비디오</h1>   
+            <li class="item-title"> 웹 페이지에서 영상파일을 재생하는 태그</li>
+            <li class="item-title">&lt;video src="링크위치" &gt;
+            <li class="item-title">재생가능파일 : mp4,ogg,webm
+            <li class="item-title">속성</li>
+            <ul style="list-style-type:circle;">
+                <li class="sub-title"> controls="controls" : 컨트롤버튼</li>    
+                <li class="sub-title"> autoplay="autoplay" : 자동재생</li> 
+                <li class="sub-title"> loop="loop" : 반복재생</li> 
+                <li class="sub-title"> audio="muted" : 시작시 음소거</li> 
+            </ul>
+        </article>
+        
+        
+	</body>
+</html>

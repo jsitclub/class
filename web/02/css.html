@@ -13,44 +13,80 @@
             <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">코딩연습</a></li>
             </ul>                
         </nav>
-        <h1> CSS 기초 문법 </h1>
-        <ul>
-            <li class="item-title">속성:<태그 속성="값">의 형태                
-            <li class="item-title">style 바꾸는 방법</li>
-            <ul  style="list-style-type:circle;">
-                <li>태그의 속성 이용</li>
-                <span class="exam"> 예) &lt;img src="aa.jpg" width="300"&gt;</span>
+        
+        
+        
+        <h1 class="title" id="css-basic"> CSS 기초 문법 </h1>
+        
+        <ul class="title-1">                
+        <li class="item-title">style 바꾸는 방법</li>
 
-                <li>style 속성 이용</li>
-                <span class="exam"> 예) &lt;p style="color:purple"&gt;</span>
-
-                <li>style 태그 이용</li>
-                <span class="exam"> 예) </span><br>
-                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; div{</span><br>
-                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;</span><br>
-                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span><br>
-                <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; /style&gt;</span>
-
-                <li>외부 css파일 이용</li>
-                <span class="exam"> 예) &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</span>
-
-                <li>우선순위</li>
-                <span class="exam"> style 속성 > style 태그 > 외부css파일 > 태그의 속성</span>
-
-
-            </ul>
+            <ul class="title-2">
+            <li>태그의 속성 이용</li>
+                <ul class="title-3">
+                <li> &lt;img src="aa.jpg" width="300"&gt;</li>
+                </ul>
                 
-            <li class="item-title">class 와 id</li>
-            <span class="exam"> 예) &lt;div class="red" id="red01"&gt;</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="red" id="red02"&gt;</span>
+            <li>style 속성 이용</li>
+                <ul class="title-3">
+                <li> &lt;p style="color:purple"&gt;</li>
+                </ul>
+                
+            
+            <li>style 태그 이용</li>
+                <ul class="title-3">
+                <li> 주로 &lt; head&gt; 부분에 작성</li>
+                <li> <div>
+                    &lt; style&gt;
+                    div{
+                    padding:10px;
+                     }
+                    &lt; /style&gt;
+                    </div>
+                </li>
+                </ul>
+                
+            <li>외부 css파일 이용</li>
+                <ul class="title-3">
+                <li> link 태그를 이용하여 외부에 있는 css파일을 연결</li>
+                <li> &lt;link rel="stylesheet" type="text/css" href="style.css"&gt; </li>
+                </ul>
 
-            <li class="item-title">style에서 class는 . 으로 id는 # 으로 구분한다.</li>
-            <span class="exam"> 예) .red{</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp; #red01{</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; padding:10px;</span><br>
-            <span class="exam"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span><br>
+            <li>우선순위</li>
+                <ul class="title-3">                
+                <li> style 속성 > style 태그 > 외부css파일 > 태그의 속성</li>
+                <li> id > class > 태그</li>
+                </ul>
+           
+            </ul>
+        
+        
+        <li>class 속성 과 id 속성</li>
+        
+            <ul class="title-2">
+            <li> 태그를 구분 하기위해 임의로 붙여준다. 
+            <li> class : 그룹 구분값</li>
+            <li> id : 유일한 구분값으로 페이지 안에서 겹치면 안됨</li>
+                <ul class="title-3">
+                    <li> 
+                        &lt;div class="red" id="red01"&gt;<br>
+                        &lt;div class="red" id="red02"&gt;
+                    </li>
+                </ul>
+                
+            <li >style에서 class는 . 으로 id는 # 으로 구분한다.</li>
+                <ul class="title-3">
+                    <li> 
+                        .red{ <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; color : red;<br>
+                        }<br><br>
+                        #red01{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; padding : 10px;<br>
+                        }
+                        
+                    </li>
+                </ul>
+            </ul>
         </ul>
 	</body>
 </html>

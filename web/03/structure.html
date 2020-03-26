@@ -2,9 +2,12 @@
 <html>
     <head>
         <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="/class/main.css">
 
     </head>
+    
+    
 	<body>
         
         <nav >
@@ -15,37 +18,70 @@
             </ul>                
         </nav>
         
-        <p>
-        다음에 설명하는 내용은 반드시 해당 위치에만 사용하는것은 아니지만 대체로 따르는것이 유리하다.<br>
-        즉 &lt;head&gt; 태그 안에 &lt;p&gt;나 &lt;div&gt; 를 사용할 수도 있고, &lt;body&gt;태그 안에 
-        &lt;meta&gt;를 사용할 수도 있으나 검색에서 불리하거나 정리의 복잡성으로 인해 대체로 아래와 같이 정리한다.    
-        </p>
-        <li class="item-title">&lt;div&gt; &lt;span&gt; : 영역을 정의하는 태그로 div는 블록으로 span은 문장안에서 범위로 지정할 수 있다.</li>
         
-        <h1>&lt;head&gt;</h1>    
+        <!-- HEAD -->
+        <h1 class="title" id="head">&lt;head&gt;</h1> 
         
-        <li class="item-title">&lt;meta&gt; : 문서정보 지정</li>
-        <ol>
-            <li>태그의 속성 이용</li>
-            <span class="exam"> 형식) &lt;meta http-equiv="항목이름" name = "정보이름" content="값"&gt;</span><br>
-            <span class="exam">  예) &lt;meta http-equiv="copyright" content="jsitclub"&gt;</span><br>
-            <span class="exam">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="keywords" content="HTML,CSS"&gt;</span><br>
+        <ul class="titile-1">
+        <li><a href="https://www.w3schools.com/tags/tag_meta.asp">&lt;meta&gt; </a>: 문서정보 지정</li>
+        
+            <ul class="title-2">
+            <li> 속성</li>  
 
-            <li>문자셋 지정하기</li>
-            <span class="exam"> 예) &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8"&gt;</span><br>
-        </ol>
-        <li class="item-title">&lt;title&gt; : 문서제목 지정</li>
+                <ul class="title-3">
+                <li> charset : 문자셋을 설정</li>
+                    <ul class="title-4">
+                    <li>utf-8</li>
+                    <li>euc-kr</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Character_encoding#Common_character_encodings"> 참고 - wikipedia</a> </li>
+                    </ul>
+
+                <li> http-equiv : 값의 종류 </li>
+                    <ul class="title-4">
+                    <li>content-type</li>
+                    <li>default-style</li>
+                    <li>refresh</li>
+                    </ul>
+
+                <li> name </li>
+                    <ul class="title-4">
+                        <li>application-name</li>
+                        <li>author</li>
+                        <li>description</li>
+                        <li>generator</li>
+                        <li>keywords</li>
+                        <li>viewport</li>
+                    </ul>
+
+                <li> content : 값</li>
+                    <ul class="title-4">
+
+
+                    </ul>
+                </ul>
+            </ul>
+        <li>&lt;title&gt; : 문서제목 지정</li>
+        </ul>
         
-        
-        <h1 id="body-title">&lt;body&gt;</h1>  
-        
+
+       
+        <!-- BODY -->
+        <h1 class="title" id="body">&lt;body&gt;</h1>  
+        <ul class="titile-1">
+               
+        <li class="item-title">&lt;div&gt; &lt;span&gt; : 영역을 정의하는 태그로 div는 블록으로 span은 문장안에서 범위로 지정할 수 있다.</li>
         <li class="item-title">&lt;h1&gt; ~ &lt;h6&gt; : 단락제목 지정</li>
         <li class="item-title">&lt;p&gt; : 단락정의</li>        
         <li class="item-title">&lt;br&gt; : 줄바꾸기</li>
         <li class="item-title">&lt;hr&gt; : 수평선</li>
         <li class="item-title">&lt;blockquote&gt; &lt;q&gt; : 인용문</li>
         <li class="item-title">&lt;img&gt; : 이미지</li>
-        
+
+        </ul>
+        <section>
+                
+                
+            </section>
         
         
         <h1 id ="semantic-title">HTML5의 시맨틱 태그</h1>  

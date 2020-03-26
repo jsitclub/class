@@ -9,8 +9,8 @@ li{
 }
 
 nav {
-        width:800px; 
-        /*
+        /*width:800px; 
+        
         text-align: center;
         */
     }
@@ -28,15 +28,24 @@ nav ul li{
 }
 
 
-table,tr,td{
-    border:1px solid;
-}
-
-.exam{
-    padding-left:50px;
-}
-
-.item-title{
+.title-1{
     font-size:20px;
     font-weight:bold;
+}
+.title-2{
+    font-size:20px;
+    font-weight:normal;
+}
+
+ .code{
+    font-size:20px;
+    font-weight: normal;
+    width:500px;
+    border:1px solid;
+    margin-left:60px ;
+    padding:20px;
+}
+.ex{
+    margin-left:60px ;
+    
 }
