@@ -2,11 +2,20 @@ body{
     background:gold;
     
     margin-left:100px;
+    font-family:"굴림", "serif";
 }
 
 li{
     margin:20px;
 }
+
+table{
+    border: 1px solid;   
+}
+th,td{
+    border-bottom : 1px solid;   
+}
+ 
 
 nav {
         /*width:800px; 
@@ -36,6 +45,8 @@ nav ul li{
     font-size:20px;
     font-weight:normal;
 }
+
+
 
  .code{
     font-size:20px;
