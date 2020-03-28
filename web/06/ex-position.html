@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css"> 
+        <style>
+            ul{
+                border : 1px solid;
+            }
+            img{
+                width:300px;
+            }
+            #img-static{
+                position:static;
+            }
+            
+            #img-relative{
+                position:relative;
+                left:100px;
+                top:0px;
+            } 
+            
+            #img-absolute{
+                position:absolute;
+                left:500px;
+                top:900px;
+            } 
+            
+            #img-fixed{
+                position:fixed;
+                right:0px;
+                top:0px;
+            } 
+        </style>  
+    </head>
+    
+    <body>
+        <div>
+            <h1>위치지정</h1>    
+            <ul class="title-1">
+            <li>static</li>
+                <img id="img-static" src="../src/book1.jpg">
+            
+            <li>relative</li>
+                <img id="img-relative" src="../src/book1.jpg">
+            
+            <li>absolute</li>
+                <img id="img-absolute" src="../src/book2.jpg">
+
+            <li>fixed</li>
+                <img id="img-fixed" src="../src/book2.jpg">
+
+            </ul>
+            
+        </div>
+            
+    </body>
+    
+</html>
