@@ -6,6 +6,14 @@
         
         <link rel="stylesheet" type="text/css" href="/class/main.css">
         <style>
+            table{
+                text-align: center; 
+                
+            }   
+            td{
+                padding:20px;    
+            }
+            
             
         </style>
 
@@ -14,7 +22,7 @@
         <nav >
             <ul style="list-style-type:none;">
             <li><a href="/class/index.html">Home</a></li>
-            <li><a href="./ex-docstyle.html">실습</a></li>
+            <li><a href="#"></a></li>
             <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default" target="_blank">코딩연습</a></li>
             </ul>                
         </nav>
@@ -29,7 +37,7 @@
                 <li>fixed </li>
                 </ul> 
 
-            <li>float : 좌우배치</li>
+            <li>float : 좌우배치 <a href="./ex-float.html">( 예제 )</a> </li>
                 <ul class="title-2">
                 <li>left </li>
                 <li>right </li>
@@ -62,7 +70,7 @@
                 <li>repeat-y</li>
                 <li>no-repeat</li>
                 </ul> 
-            <li>background-attachment : 배경이미지 고정 </li>  
+            <li>background-attachment : 배경이미지 고정여부 </li>  
                 <ul class="title-2">
                 <li>scroll</li>
                 <li>fixed</li>
@@ -70,23 +78,87 @@
             
             <li>background-position : 배경이미지 위치 </li>  
                 <ul class="title-2">
-                <li>scroll</li>
-                <li>fixed</li>
-                </ul> 
-            
+                    <table>
+                        <tr>
+                            <td>top left</td>
+                            <td>top center</td>
+                            <td>top right</td>
+                        </tr>
+                        <tr>
+                            <td>center left</td>
+                            <td>center center</td>
+                            <td>center right</td>
+                        </tr>
+                        <tr>
+                            <td>bottom left</td>
+                            <td>bottom center</td>
+                            <td>bottom right</td>
+                        </tr>
+                    </table>
+                
             </ul>
-        
-        <h1 id ="mediaquery"> 미디어쿼리</h1>    
+        </ul>
+        <h1 id ="mediaquery"> 미디어쿼리 <a href="./ex-mediaquery.html">(예제)</a></h1>
             <ul class="title-1">
+            <li>하나의 웹페이지를 상황에 따라 스타일로 다르게 보여준다<br>
+                미디어 쿼리는 viewport의 높이/너비, 디바이스의 높이/너비, 타블렛이나 폰의 가로/세로 등을 체크할수 있다.
+                
+                </li>
+            
             <li>적용</li>
                 <ul class="title-2">
                 <li>@media로 CSS에 적용</li>
+                    <ul class="title-3">
+                        &lt;style&gt;<br>
+                            @media all and (max-width : 480px)<br>
+                            {<br>
+                                <div style="padding-left:50px">
+                                div {<br>
+                                    <div style="padding-left:50px">
+                                    color:skyblue;<br>    
+                                    </div>                                    
+                                }<br>    
+                                </div>
+                                
+                            }<br>
+                        &lt;/style&gt;
+                        
+                    </ul>    
                 <li>&lt;style&gt; 태그의 media 속성으로 적용</li>
+                    <ul class="title-3">
+                        &lt;style type="text/css" media="all and (max-width : 480px)"<br>
+                                <div style="padding-left:50px">
+                                div {<br>
+                                    <div style="padding-left:50px">
+                                    color:skyblue;<br>    
+                                    </div>                                    
+                                }<br>    
+                                </div>
+                            
+                        &lt;/style&gt;
+                        
+                    </ul>    
                 <li>&lt;link&gt; 태그를 이용하여 외부 CSS파일에 적용</li>
+                    <ul class="title-3">
+                        &lt;link type="text/css" media="all and (max-width : 480px) href="main_style.css &gt;
+                        
+                    </ul>    
                 </ul> 
             
             <li>미디어 타입</li>
+                <ul class="title-2">
+                <li>all</li>
+                <li>screen</li>
+                <li>print</li>
+                
+                </ul>
             <li>조건적용</li>
+                <ul class="title-2">
+                <li>웹페이지의 너비 : width, min-width, max-width</li>
+                <li>웹페이지의 높이 : height, min-height, max-height</li>
+                <li>디바이스의 너비 : device-width, min-device-width, max-device-width</li>
+                <li>디바이스의 높이 : device-height, min-device-height, max-device-height</li>
+                </ul>
             </ul>
 	</body>
 </html>

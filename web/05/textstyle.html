@@ -6,57 +6,11 @@
         
         <link rel="stylesheet" type="text/css" href="/class/main.css">
         <style>
-            @font-face{
-                font-family:webfont;
-                src:url("../src/SDMiSaeng.ttf");
-                font-style:normal;
-                font-weight:bold;
-            }
             
             li.title-1{
                 margin-top:70px
             }
-            
-            .font-color{
-                color:purple;
-            }
-            .font-style
-            {
-                font-style:italic;
-            }
-            .font-size{
-                font-size:110%;
-            }
-            
-            .font-weight{
-                font-weight:lighter;
-            }
-            
-            .font-family{
-                font-family:"궁서체","serif";
-            }
-            
-            .text-shadow{
-                text-shadow : 5px 5px 5px #330099;
-            }
-            
-            .font-face{
-                font-family:"webfont";
-                font-size:120%;
-            }
-            .text-decoration#underline{
-                text-decoration:underline;
-            }
-            .text-decoration#overline{
-                text-decoration:overline;
-            }
-            .text-decoration#line-through{
-                text-decoration:line-through;
-            }
-            .text-decoration#blink{
-                text-decoration:blink;
-            }
-            
+           
             
            /*=========윗첨자,아래첨자==========*/
            #sub, #sup{
@@ -71,9 +25,66 @@
             #sub{
               bottom: -0.25em;
             }
-            /*============================*/
             
             
+            /*=========꾸미기 밑줄,윗줄,취소선,깜빡이기==========*/
+            .text-decoration#underline{
+                text-decoration:underline;
+            }
+            .text-decoration#overline{
+                text-decoration:overline;
+            }
+            .text-decoration#line-through{
+                text-decoration:line-through;
+            }
+            .text-decoration#blink{
+                text-decoration:blink;
+            }
+            
+            
+            
+           
+            
+            .font-color{
+                color:purple;
+            }
+            
+            .font-size{
+                font-size:110%;
+            }
+            
+            .font-style
+            {
+                font-style:italic;
+            }
+            
+            .font-weight{
+                font-weight:lighter;
+            }
+            
+            .text-shadow{
+                text-shadow : 5px 5px 5px #330099;
+            }
+            
+            .font-family{
+                font-family:"궁서체","serif";
+            }
+            
+            
+            @font-face{
+                font-family:webfont;
+                src:url("../src/SDMiSaeng.ttf");
+                font-style:normal;
+                font-weight:bold;
+            }
+            
+            
+            .font-face{
+                font-family:"webfont";
+                font-size:120%;
+            }
+            
+           
         </style>
 
     </head>
@@ -138,6 +149,14 @@
                 <li class="text-decoration" id="inherit">inherit : 주변속성과 동일 </li>
                 </ul>    
                 
+            <li class="title-1" >text-align : 정렬</li>
+                <ul class="text-align" class="title-2">             
+                <li class="text-align" id="left" >left : 왼쪽정렬</li>
+                <li class="text-align" id="right" >right : 오른쪽정렬</li>
+                <li class="text-align" id="center">center : 가운데정렬</li>
+                <li class="text-align" id="justify">justify : 양쪽정렬</li>
+                <li class="text-align" id="inherit">inherit: 주변속성과 동일 </li>
+                </ul>
                 
             <li class="title-1" >color : 글자색</li>
                 <ul class="font-color" class="title-2" >             
@@ -171,19 +190,7 @@
                 <li class="font-weight">inherit: 주변속성과 동일 </li>
                 </ul>
             
-            <li class="title-1">font-family : 한번에 여러개의 글꼴지정</li>
-                <ul class="font-family" class="title-2">             
-                <li class="font-family">앞의 글꼴이 없으면 순서대로 적용되므로 대표글꼴을 뒤쪽에 적는다</li>
-                <li class="font-family">font-family : "궁서체","serif"</li>
-                <li class="font-family">대표적 글꼴</li>
-                    <ul class="font-family" class="title-3">
-                    <li class="font-family">serif</li>
-                    <li class="font-family">sans-serif</li>
-                    <li class="font-family">cursive</li>
-                    <li class="font-family">fantasy</li>
-                    <li class="font-family">monospace</li>
-                    </ul>
-                </ul>
+            
             
             <li class="title-1" >text-shadow : 그림자효과</li>
                 <ul class="text-shadow" class="title-2">             
@@ -198,18 +205,22 @@
                     </ul>
                 </ul>
             
-            <li class="title-1" >text-align : 정렬</li>
-                <ul class="text-align" class="title-2">             
-                <li class="text-align">속성</li>
-                    <ul class="text-align" class="title-3">
-                    <li class="text-align" id="left" >left : 왼쪽정렬</li>
-                    <li class="text-align" id="right" >right : 오른쪽정렬</li>
-                    <li class="text-align" id="center">center : 가운데정렬</li>
-                    <li class="text-align" id="justify">justify : 양쪽정렬</li>
-                    <li class="text-align" id="inherit">inherit: 주변속성과 동일 </li>
+            
+                
+            <li class="title-1">font-family : 한번에 여러개의 글꼴지정</li>
+                <ul class="font-family" class="title-2">             
+                <li class="font-family">앞의 글꼴이 없으면 순서대로 적용되므로 대표글꼴을 뒤쪽에 적는다</li>
+                <li class="font-family">font-family : "궁서체","serif"</li>
+                <li class="font-family">대표적 글꼴</li>
+                    <ul class="font-family" class="title-3">
+                    <li class="font-family">serif</li>
+                    <li class="font-family">sans-serif</li>
+                    <li class="font-family">cursive</li>
+                    <li class="font-family">fantasy</li>
+                    <li class="font-family">monospace</li>
                     </ul>
                 </ul>
-            
+                
             <li class="title-1">@font-face : 웹폰트</li>
                 <ul class="font-face" class="title-2">             
                 <li class="font-face">사용자 컴퓨터에 폰트가 없어도 서버의 폰트를 갖고온다.</li>
