@@ -12,7 +12,7 @@ li{
 table{
     border: 1px solid;   
 }
-th,td{
+tr,th,td{
     border : 1px solid;   
 }
  
