@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="../JS.css">
+        
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank">javascript연습</a></li>
+            </ul>                
+        </nav>
+        
+        
+        <h1 class="title" id="js">JavaScript 기본</h1>
+        
+        <ul class="title-1">
+        <li> 자바스크립트는 웹 브라우저에서 동작하는 프로그래밍 언어 이다.</li>    
+        <li> 종류 </li>   
+            <ul class="title-2" >
+                <li>ECMAScript : 자바스크립트의 공식적 이름 (<a href="https://www.w3schools.com/js/js_versions.asp">JavaScript Versions</a>)</li>
+            <li>클라이언트 측 자바스크립트 : 웹브라우저에서 동작되는 자바스크립트로 브라우저에 내장되어있다.(ECMAScript(중심언어) + 브라우저 API)</li>
+            <li>서버 측 자바스크립트 : 웹서버에서 동작되는 자바스크립트로 서버에 설치하여 사용한다.(Node.js 등)</li>
+            </ul>
+        
+        <li>자바스크립트는 페이지를 동적으로 표현할 수 있게 한다.
+            <ul class="title-2" >
+            <li><input type="button" value ="skyblue"  style="font-size:30px" onclick ='document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue"'>
+                <input style="font-size:30px" type="button" value ="gold"onclick ='document.getElementsByTagName("body")[0].style.backgroundColor = "gold"'>
+            </li>
+            
+            <li>
+                
+                <input style="font-size:30px" type="button" value ="hello" onclick ="document.getElementById('text').innerHTML = 'hello';">
+            <span style="font-size:30px" id="text"> ??? </span>
+                
+            </li>
+            
+            </ul>        
+        <li> 실행방법
+            <ul class="title-2" >
+            <li>html문서에 삽입하여 사용하는 방법</li>
+                <ul class="title-3" >
+                <li>이벤트 속성에 작성 : &lt; input type = "button" onclick = "javascript코드" &gt; 
+                <li>&lt; script &gt;태그 사용 : &lt; script &gt; javascript코드 &lt; /script &gt;
+                <li>js파일(*.js)과 연결 : &lt; script src="js파일 경로" &gt; &lt; /script &gt; 
+        
+                </ul>
+            <li>개발자도구의 웹브라우저 콘솔(개발자 도구)에서 실행하는 방법. </li>
+            <li>Node.js를 설치 후 콘솔에서 실행하는 방법(서버 프로그래밍이 가능하게 됨)</li>
+        
+            </ul>
+        <li> 출력
+            <ul class="title-2" >
+            <li>document.getElementById('text').innerHTML = 'hello'</li>
+            <li>console.log("hello javascript")</li>
+            <li>alert("hello javascript")</li>
+            <li>document.write("hello javascript")</li>
+            
+                
+            </ul>
+        
+        </ul>
+        
+    </body>
+
+
+</html>
