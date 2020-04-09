@@ -4,7 +4,8 @@
         <meta content="text/html" charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         
-        <link rel="stylesheet" type="text/css" href="../HTML-CSS.css">
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
         <style>
             table{
                 text-align: center; 
@@ -36,39 +37,50 @@
                 <ul class="title-2">
                 <li>@media로 CSS에 적용</li>
                     <ul class="title-3">
-                        &lt;style&gt;<br>
+                        <div class="code-border">
+                        &lt;style&gt;
+                            
+                            <div class="code-sub">
                             @media all and (max-width : 480px)<br>
                             {<br>
-                                <div style="padding-left:50px">
-                                div {<br>
-                                    <div style="padding-left:50px">
-                                    color:skyblue;<br>    
+                                <div class="code-sub">
+                                div {
+                                    <div class="code-sub">
+                                    color:skyblue;
                                     </div>                                    
-                                }<br>    
+                                }    
                                 </div>
-                                
-                            }<br>
+                            }
+                            </div>
+                            
                         &lt;/style&gt;
+                        </div>
+                        
                         
                     </ul>    
                 <li>&lt;style&gt; 태그의 media 속성으로 적용</li>
                     <ul class="title-3">
-                        &lt;style type="text/css" media="all and (max-width : 480px)"<br>
-                                <div style="padding-left:50px">
-                                div {<br>
-                                    <div style="padding-left:50px">
+                        
+                        <div class="code-border">
+                        &lt;style type="text/css" media="all and (max-width : 480px)"&gt;<br>
+                                <div class="code-sub">
+                                div {
+                                    <div class="code-sub">
                                     color:skyblue;<br>    
                                     </div>                                    
-                                }<br>    
+                                }    
                                 </div>
                             
                         &lt;/style&gt;
+                        </div>
+                        
                         
                     </ul>    
                 <li>&lt;link&gt; 태그를 이용하여 외부 CSS파일에 적용</li>
                     <ul class="title-3">
+                        <div class="code-border">
                         &lt;link type="text/css" media="all and (max-width : 480px) href="main_style.css &gt;
-                        
+                        </div>
                     </ul>    
                 </ul> 
             
