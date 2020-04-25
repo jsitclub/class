@@ -25,57 +25,76 @@
             </ul>                
         </nav>
         
-        <h1 id ="position">요소배치</h1>    
-            <ul class="title-1">
+        <h1 >화면배치</h1>
+        <ul id ="position" class="title-1">
+        <li>요소배치</li>    
+            <ul class="title-2">
             <li>position : 요소배치 <a href="./ex-position.html">( 예제 )</a> </li>
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>static : 일반적 배치 (상->하 , 좌->우) </li>
-                <li>relative </li>
+                <li>relative : 원래 있어야 하는곳에서 지정된 위치만큼 이동 </li>
                 <li>absolute </li>
                 <li>fixed </li>
-                </ul> 
+                <li>redlative,absolute,fixed 는 left,height와 함께 사용하여야 함
+                <li>예) 
+                    <ul class="title-4">
+                    <li style="list-style-type:none">p{</li>
+                        <ul class="title-5">                    
+                        <li>position:relative;</li>
+                        <li>left:100px;</li>
+                        <li>height:100px;</li>
+                        </ul>
+
+                    <li style="list-style-type:none">}</li>
+                    </ul>
+                </ul>
 
             <li>float : 좌우배치 <a href="./ex-float.html">( 예제 )</a> </li>
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>left </li>
                 <li>right </li>
                 <li>none </li>
                 </ul>  
-                
+
             <li>clear : 좌우배치해제</li>
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>left </li>
                 <li>right </li>
                 <li>none </li>
                 </ul> 
-                
+
             <li>display : 배치방식 변경</li>
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>block </li>
                 <li>inline </li>
                 <li>none </li>
                 </ul>  
+            </ul>
         </ul>
         
-        <h1 id ="background"> 배경설정</h1>    
-            <ul class="title-1">
+        <ul class="title-1">
+        <li id="background">배경설정</li> 
+            <ul class="title-2">
             <li>background : 배경색 </li>
             <li>background-image : 배경이미지 </li>
+                <ul class="title-3">
+                <li>url("이미지 경로")</li>
+                </ul> 
             <li>background-repeat : 배경이미지 반복 </li>
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>repeat</li>
                 <li>repeat-x</li>
                 <li>repeat-y</li>
                 <li>no-repeat</li>
                 </ul> 
             <li>background-attachment : 배경이미지 고정여부 </li>  
-                <ul class="title-2">
+                <ul class="title-3">
                 <li>scroll</li>
                 <li>fixed</li>
                 </ul> 
             
             <li>background-position : 배경이미지 위치 </li>  
-                <ul class="title-2">
+                <ul class="title-3">
                     <table>
                         <tr>
                             <td>top left</td>
@@ -94,6 +113,7 @@
                         </tr>
                     </table>
                 
+                </ul>
             </ul>
         </ul>
         
