@@ -41,8 +41,17 @@
             <li>value : 입력값</li>
             <li>maxlength : 입력가능 길이</li>
             <li>readOnly : 읽기전용</li>
+                <ul class="title-2">
+                <li>true / false</li>
+                </ul>
             <li>disabled : 활성화여부</li>
+                <ul class="title-2">
+                <li>true / false</li>
+                </ul>
             <li>checked : 선택된 값(체크박스,라디오버튼에서 사용)</li>
+                <ul class="title-2">
+                <li>true / false</li>
+                </ul>
                 
                 <ul class="title-3">
                 <table width=50%>
@@ -111,8 +120,8 @@
                         <td>checkbox</td>
                         <td>
                         <!-- value는 반드시 넣어준다. -->
-                        <input type="checkbox" value="1" name="checkbox" checked=true>독서
-                        <input type="checkbox" value="2" name="checkbox" >코딩
+                        <input type="checkbox" value="1" name="checkbox">독서
+                        <input type="checkbox" value="2" name="checkbox" checked="true" >코딩
                         <input type="checkbox" value="3" name="checkbox" >운동
                         </td>
                         <td>체크박스</td>
@@ -121,7 +130,7 @@
                         <td>radio</td>
                         <td>
                             <!-- name이 값아야 그룹으로 묶임 value는 반드시 넣어준다.-->
-                            <input type="radio" value="1" name="radio" checked=true>자전거
+                            <input type="radio" value="1" name="radio"  checked="true">자전거
                             <input type="radio" value="2" name="radio" >도보
                             <input type="radio" value="3" name="radio" >버스
                             
@@ -237,13 +246,21 @@
         <ul class="title-1">
         <li> &lt; textarea &gt; 는 여러줄을 입력할수 있는 태그이다. </li>    
         <li> 속성</li>
-        
+            <ul class="title-2">
+            <li>name : 태그 이름 설정</li>
+            <li>rows : 행의 수(세로길이)</li>
+            <li>cols : 열의 수(가로길이)</li>
+            <li>readOnly : 읽기전용</li>
+            <li>disabled : 활성화여부</li>
+            </ul>
+        <li><textarea rows="5" cols="30"></textarea></li>
         </ul>
+        
         
         
         <h1 class="title" id="button">&lt; button &gt;</h1>        
         <ul class="title-1">
-        <li> &lt; button &gt; 은 &lt; input type="button"&gt; 과 모양은 비슷하지만 마치는 태그인 &lt; /button &gt; 이 필요하고 사이값으로 텍스트나 이미지가 들어갈수 있다는 차이가 있다. </li>    
+        <li> &lt; button &gt; 은 &lt; input type="button"&gt; 과 모양은 비슷하지만 닫는태그 &lt; /button &gt; 가 필요하고 사이값으로 텍스트나 이미지가 들어갈수 있다는 차이가 있다. </li>    
         <li> 속성</li>
             <ul class="title-2">
             <li>type</li>
@@ -252,8 +269,8 @@
                 <li>reset</li>
                 <li>submit</li>
                 </ul>
-            <li>value</li>
-            <li>name</li>
+            <li>value : 버튼의 text</li>
+            <li>name : 버튼의 이름</li>
             </ul>
         </ul>
        

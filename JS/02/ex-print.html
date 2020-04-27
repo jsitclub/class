@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
+        <script>
+            function printHtml(param)
+            {
+               document.getElementById('lblResult').innerHTML = param.value;
+            }
+            
+            function printAlert(param)
+            {
+                
+                alert(param.value);
+            }
+            
+             function printConsole(param)
+            {
+                console.log(param.value);
+            }
+            
+            
+            
+            
+            
+        </script>
+    </head>
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank">javascript연습</a></li>
+            </ul>                
+        </nav>
+        
+        
+        <h1 class="title" id="js-test">입력값 출력</h1>
+        
+        <ul class="title-1">
+        <li> 입력값 : <input type="text" id="txt_html"  name="txt_html" >
+                    <input type="button" value="결과출력"  onclick="printHtml(document.getElementById('txt_html'))"></li>    
+        <li> 결과값 : <span style="font-size:30px" id="lblResult"> ??? </span>   </li> 
+        </ul>
+       
+        <!-- <input style="font-size:30px" type="button" value ="hello" onclick ="document.getElementById('text').innerHTML = 'hello';"> -->
+       
+        
+        <ul class="title-1">
+        <li> 입력값 : <input type="text" id="txt_alert"  name="txt_alert" >
+                    <input type="button" value="결과출력"  onclick="printAlert(document.getElementById('txt_alert'))"></li>    
+        <li><span>결과값 : 알림창</span>   </li> 
+        </ul>
+
+        <ul class="title-1">
+        <li> 입력값 : <input type="text" id="txt_console"  name="txt_console" >
+                    <input type="button" value="결과출력"  onclick="printConsole(document.getElementById('txt_console'))"></li>    
+        <li><span>결과값 : console창</span>   </li> 
+        </ul>
+       
+        
+        
+    </body>
+
+</html>
