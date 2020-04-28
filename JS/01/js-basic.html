@@ -21,7 +21,7 @@
         </nav>
         
         
-        <h1 class="title" id="js">JavaScript 기본</h1>
+        <h1 class="title" id="js">JavaScript 개요</h1>
         
         <ul class="title-1">
         <li> 자바스크립트는 웹 브라우저에서 동작하는 프로그래밍 언어 이다.</li>    
@@ -76,49 +76,61 @@
             </ul>
         </ul>
         
-        <h1 class="title" id="output">JavaScript 출력</h1>
-            <ul class="title-1" >
-                
-            <li>브라우저 console에 출력</li>
-                <ul class="title-2" >
-                <li>console.log("hello javascript")</li>
-                </ul>
-                
-            <li>경고창에 출력</li>
-                <ul class="title-2" >
-                <li>alert("hello javascript")</li>
-                </ul>
-            
-            <li>html 태그에 출력</li>
-                <ul class="title-2" >
-                <li>document.write("hello javascript")</li>
-                <li>document.getElementById('text').innerHTML = 'hello'</li>
+        
+        <h1 class="title" id="basic">기본 규칙</h1>
+        <ul class="title-1" >
 
-                <li>예</li>
-                <div class="code-border">
-                &lt;!DOCTYPE html&gt;<br>
-                &lt;html&gt;<br>
+        <li>대문자와 소문자를 구별한다.</li>
+        <li>문장의 끝에 세미콜론(;)을 반드시 붙인다.</li>
+        <li>주석문은 /* 문장 */  또는 // 으로 만든다.</li>
+        <li>여러 문장은 { }으로 감싼다.</li>
+
+        </ul>
+        
+        
+        
+        <h1 class="title" id="output">출력방법</h1>
+        <ul class="title-1" >
+
+        <li>브라우저 console에 출력</li>
+            <ul class="title-2" >
+            <li>console.log("hello javascript")</li>
+            </ul>
+
+        <li>경고창에 출력</li>
+            <ul class="title-2" >
+            <li>alert("hello javascript")</li>
+            </ul>
+
+        <li>html 태그에 출력</li>
+            <ul class="title-2" >
+            <li>document.write("hello javascript")</li>
+            <li>document.getElementById('text').innerHTML = 'hello'</li>
+
+            <li>예</li>
+            <div class="code-border">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+
+                <div class="code-sub">
+                &lt;body&gt;
 
                     <div class="code-sub">
-                    &lt;body&gt;
+                    &lt;h2>My First JavaScript&lt;/h2&gt;<br>
 
-                        <div class="code-sub">
-                        &lt;h2>My First JavaScript&lt;/h2&gt;<br>
+                    &lt;button type="button"
+                    onclick="document.getElementById('demo').innerHTML = Date()"&gt;<br>
+                    Click me to display Date and Time.&lt;/button&gt;<br>
 
-                        &lt;button type="button"
-                        onclick="document.getElementById('demo').innerHTML = Date()"&gt;<br>
-                        Click me to display Date and Time.&lt;/button&gt;<br>
-
-                        &lt;p id="demo"&gt;&lt;/p&gt;
-                        </div>
-
-                    &lt;/body&gt;
+                    &lt;p id="demo"&gt;&lt;/p&gt;
                     </div>
-                &lt;/html&gt; 
+
+                &lt;/body&gt;
                 </div>
-                </ul>
+            &lt;/html&gt; 
+            </div>
             </ul>
-        
+        </ul>
         
         
     </body>
