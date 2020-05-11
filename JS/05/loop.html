@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
+        <style>
+        
+            td{
+                height:50px;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            </ul>           
+        </nav>
+        
+        <h1 class="title" id="while">while문</h1>
+        <ul class="title-1">
+        <li> 반복횟수가 불명확할때 주로 사용 </li>    
+        <li> 조건식이 참일 "동안" 반복 ( "~까지"로 해석하지 말것! ) </li>    
+            
+        <li>while문</li>    
+            <ul class="title-2" style="list-style-type:none">
+            <li>while(조건식){</li>    
+            <li style="padding-left:50px">    문장 </li>    
+            <li>}</li>   
+            </ul>
+            
+        <li>do ~ while문</li>
+            <ul class="title-2" style="list-style-type:none">
+            <li>do {</li>    
+            <li style="padding-left:50px">    문장 </li>    
+            <li>} while(조건식);</li>
+            </ul>
+           
+        </ul>
+        
+        
+        <h1 class="title" id="for">for문</h1>
+        <ul class="title-1">
+        <li>반복횟수가 명확할때 주로 사용</li>    
+        <li>for(초기화 식 ; 조건식 ; 반복식) 문</li>
+            <ul class="title-2" style="list-style-type:none">
+            <li>for(var i=0 ; i<10 ; i++) {</li>    
+            <li style="padding-left:50px">    문장 </li>    
+            <li>} </li>
+            </ul>
+        <li>for(변수 in 객체) 문</li>
+            <ul class="title-2" style="list-style-type:none">
+            <li>var obj={a:1,b:2,c:3};</li>    
+            <li>for(var p in obj) {</li>    
+            <li style="padding-left:50px">    console.log("obj." + p + "=" + obj[p]); </li>    
+            <li>} </li>
+            </ul>
+        </ul>
+        
+        
+        <h1 class="title" id="break">break/continue문</h1>
+        <ul class="title-1">
+        <li>break문</li>    
+        <li>break문 라벨;</li>
+            <ul class="title-2">
+            <li>정의된 라벨을 빠져나간다. 중첩반복문에서 한번에 모두 빠져나갈때 주로 사용</li>
+            <ul class="title-3" style="list-style-type:none">
+            <li>loop: for(var i=0;i<10;i++) {</li>    
+            <li style="padding-left:50px">for(var j=0;j<10;j++) {</li>    
+            <li style="padding-left:100px">if (i>j) {</li>    
+            <li style="padding-left:150px">    break loop; </li>    
+            <li style="padding-left:100px">}</li>    
+            <li style="padding-left:50px">}</li>    
+            <li>} </li>
+            </ul>    
+                
+                
+            </ul>
+            
+        <li>continue문</li>    
+        <li>continue문 라벨;</li>    
+        </ul>
+    </body>
+
+
+</html>
