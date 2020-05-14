@@ -75,6 +75,7 @@ footer{
 
 /*소스코드 */
  .code-border{
+    list-style-type:none;
     line-height:150%;
     font-size:20px;
     font-weight: normal;
@@ -85,7 +86,8 @@ footer{
     padding:10px;
 }
  .code-sub{
-    margin-left:30px ;
+    list-style-type:none;
+    margin-left:60px ;
     padding:10px;
 }
 /*************************/
