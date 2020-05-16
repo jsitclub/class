@@ -39,14 +39,8 @@
             <li>name : 태그 이름 설정</li>
             <li>value : 입력값</li>
             <li>maxlength : 입력가능 길이</li>
-            <li>readOnly : 읽기전용</li>
-                <ul class="title-2">
-                <li>true / false</li>
-                </ul>
-            <li>disabled : 활성화여부</li>
-                <ul class="title-2">
-                <li>true / false</li>
-                </ul>
+            <li>readOnly : 읽기전용</li>                
+            <li>disabled : 활성화여부</li>                
             <li>checked : 선택된 값(체크박스,라디오버튼에서 사용)</li>
                 <ul class="title-2">
                 <li>true / false</li>
@@ -233,12 +227,11 @@
             
             <li>name : 태그 이름 설정</li>
             <li>size : 크기(보여줄 행의 갯수)</li>
-            <li>multiple : 다중선택 여부</li>
                 <ul class="title-2">
                 <li>true / false</li>
                 <li> 
-                    다중선택(true) : 
-                    <select id="attribute" size="4" multiple=True>
+                    size 설정 : 
+                    <select id="attribute" size="4">
                         <option value="text" >text</option>
                         <option value="number" >number</option>
                         <option value="password" >password</option>
@@ -251,8 +244,42 @@
                         <option value="submit" >submit</option>
                     </select>
                     
-                    일반선택(false) : 
+                    size 미설정 : 
                     <select id="attribute">
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+
+                </li>
+                </ul>
+            <li>multiple : 다중선택 여부</li>
+                <ul class="title-2">
+                <li>shift를 누른후 선택</li>
+                <li> 
+                    다중선택 설정: 
+                    <select id="attribute" size="4" multiple>
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+                    
+                    다중선택 미설정 : 
+                    <select id="attribute" size="4">
                         <option value="text" >text</option>
                         <option value="number" >number</option>
                         <option value="password" >password</option>
