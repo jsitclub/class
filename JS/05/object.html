@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
+        <style>
+        
+            td{
+                height:50px;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            </ul>           
+        </nav>
+        
+        <h1 class="title" id="object">객체</h1>
+        <ul class="title-1">
+        <li>객체 : 이름과 값으로 된 여러 데이터를 모은것(파이썬의 dictionary(사전)와 비슷)</li>    
+        <li>프로퍼티(속성) : 객체의 각각의 데이터(이름:값)</li>    
+        <li>메서드 : 객체의 프로퍼티 중 함수형태</li>    
+        
+        <li>생성</li>
+            <div  class="code-border" >
+                var member={name:'james',age:15};<br><br>
+                
+                var circle={<br>
+                <div  class="code-sub" >
+                    center:{x:0,y:0}<br>
+                    ,radius:4<br>
+                    ,area : function(){<br>
+                        <div  class="code-sub" >
+                                return this.radius * this.redius * Math.PI;<br>
+                        </div>
+                            }<br>
+                </div>
+                };<br>
+                
+            </div>
+        <li>읽기</li>
+            <div  class="code-border" >
+                member.name;<br>
+                member['name'];
+            </div>
+        <li>추가 또는 수정</li>
+            <div  class="code-border" >
+                member.class="3"; (새로운 프로퍼티를 사용하면 추가)
+                member.name="lee"; (기존의 프로퍼티를 사용하면 수정)
+            </div>
+        <li>삭제</li>
+            <div  class="code-border" >
+                delete member.class;                
+            </div>
+            
+        </ul>
+        
+       
+    </body>
+
+
+</html>

@@ -167,59 +167,6 @@
             </ul>
         </ul>
         
-        <h1 class="title" id="input">입력/출력</h1>
-        
-        <ul class="title-1">
-        <li> html 태그값 이용</li>    
-            <ul class="title-2">
-            <li>입력 : document.getElementById('txt_html').value</li> 
-            <li>출력 : document.getElementById('lblResult').innerHTML = param.value;</li>
-                
-            <li> 입력값 : <input type="text" id="txt_html"  name="txt_html" >
-                        <input type="button" value="결과출력"  onclick="printHtml(document.getElementById('txt_html'))"></li>    
-            <li> 결과값 : <span style="font-size:30px" id="lblResult"> ??? </span>   </li> 
-            
-            </ul>
-        </ul>
-       
-        <!-- <input style="font-size:30px" type="button" value ="hello" onclick ="document.getElementById('text').innerHTML = 'hello';"> -->
-       
-        
-        <ul class="title-1">
-        <li> console창에 출력</li>  
-
-            <ul class="title-2">
-            <li>출력 : console.log("값")</li>
-            <li> 입력값 : <input type="text" id="txt_console"  name="txt_console" >
-                        <input type="button" value="결과출력"  onclick="printConsole(document.getElementById('txt_console'))"></li>    
-            <li><span>결과값 : console창</span>   </li> 
-            </ul>
-        </ul>
-        
-        <ul class="title-1">
-        <li> 대화창 이용</li>  
-            
-            <ul class="title-2">
-            <li>입력 : var name = prompt("이름을 입력하세요")</li>
-            <li>출력 : alert(name)</li>
-            <li> <input type="button" value="입력창"  onclick="printAlert()"></li>
-            </ul>
-            
-            <ul class="title-2">
-            <li>입력 : var res = confirm("진행 하겠습니까?")</li>
-            <li>출력 : alert(name)</li>
-            <li> <input type="button" value="확인창"  onclick="printConfirm()"></li>
-            </ul>
-        </ul>
-        
-        <ul class="title-1">
-        <li id="changeCSS"> CSS값 변경</li>
-            <ul class="title-2">
-            <li>document.getElementById("btnChgCSS").style.color = "red";</li>
-            <li>document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue";</li>
-            <li> <input type="button" id="btnChgCSS" value="CSS변경"  onclick="chgCSS()"></li>
-            </ul>
-        </ul>    
     </body>
 
 

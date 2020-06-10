@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="/class/main.css">
+        <script src="js-basic.js"></script>
+        <script>
+            function printHtml(param)
+            {
+               // 참고로 값을 바로 읽어오고 싶으면 
+               // document.getElementById('txt_html').value를 사용
+               
+               document.getElementById('lblResult').innerHTML = param.value;
+            }
+            
+             function printConsole(param)
+            {
+                console.log(param.value);
+            }
+            function printAlert()
+            {
+                var a=prompt("입력값");
+                alert(a);
+            }
+            
+            function printConfirm()
+            {
+                var a=confirm("진행 하겠습니까?");
+                alert(a);
+            }
+            
+            function chgCSS()
+            {
+                document.getElementById("btnChgCSS").style.width = "300px";
+                document.getElementById("btnChgCSS").style.color = "red";
+                document.getElementById("btnChgCSS").style.fontsize = "50";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue";
+                alert(a);
+            }
+            
+        </script>
+        
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank">javascript연습</a></li>
+            </ul>                
+        </nav>
+        
+        <!-- ============================================= -->
+        <h1 class="title" id="input">입력/출력</h1>
+        
+        <ul class="title-1">
+        <li> html 태그값 이용</li>    
+            <ul class="title-2">
+            <li>입력 : document.getElementById('txt_html').value</li> 
+            <li>출력 : document.getElementById('lblResult').innerHTML = param.value;</li>
+                
+            <li> 입력값 : <input type="text" id="txt_html"  name="txt_html" >
+                        <input type="button" value="결과출력"  onclick="printHtml(document.getElementById('txt_html'))"></li>    
+            <li> 결과값 : <span style="font-size:30px" id="lblResult"> ??? </span>   </li> 
+            
+            </ul>
+        </ul>
+       
+        <!-- <input style="font-size:30px" type="button" value ="hello" onclick ="document.getElementById('text').innerHTML = 'hello';"> -->
+       
+        
+        <ul class="title-1">
+        <li> console창에 출력</li>  
+
+            <ul class="title-2">
+            <li>출력 : console.log("값")</li>
+            <li> 입력값 : <input type="text" id="txt_console"  name="txt_console" >
+                        <input type="button" value="결과출력"  onclick="printConsole(document.getElementById('txt_console'))"></li>    
+            <li><span>결과값 : console창</span>   </li> 
+            </ul>
+        </ul>
+        
+        <ul class="title-1">
+        <li> 대화창 이용</li>  
+            
+            <ul class="title-2">
+            <li>입력 : var name = prompt("이름을 입력하세요")</li>
+            <li>출력 : alert(name)</li>
+            <li> <input type="button" value="입력창"  onclick="printAlert()"></li>
+            </ul>
+            
+            <ul class="title-2">
+            <li>입력 : var res = confirm("진행 하겠습니까?")</li>
+            <li>출력 : alert(name)</li>
+            <li> <input type="button" value="확인창"  onclick="printConfirm()"></li>
+            </ul>
+        </ul>
+        
+        <ul class="title-1">
+        <li id="changeCSS"> CSS값 변경</li>
+            <ul class="title-2">
+            <li>document.getElementById("btnChgCSS").style.color = "red";</li>
+            <li>document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue";</li>
+            <li> <input type="button" id="btnChgCSS" value="CSS변경"  onclick="chgCSS()"></li>
+            </ul>
+        </ul>    
+        
+        
+        <!-- ============================================= -->
+        <h1 class="title" id="event">이벤트</h1>
+        
+        <table style="width:50%;font-weight:normal;">
+            <thead>
+                <tr>
+                    <th style="width:30%">이름</th>
+                    <th style="width:50%">설명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>onclick</td>
+                    <td>클릭 했을때</td>
+                </tr>
+                <tr>
+                    <td>ondblclick</td>
+                    <td>더블클릭 했을때</td>
+                </tr>
+                <tr>
+                    <td>onmousedown</td>
+                    <td>마우스 다운 했을때</td>
+                </tr>
+                <tr>
+                    <td>onmouseup</td>
+                    <td>마우스 업 했을때</td>
+                </tr>
+                
+                <tr>
+                    <td>onmouseover</td>
+                    <td>마우스가 요소위에 놓일때</td>
+                </tr>
+                <tr>
+                    <td>onmousemove</td>
+                    <td>마우스가 요소위에서 움직일때</td>
+                </tr>
+                
+                <tr>
+                    <td>onmouseout</td>
+                    <td>마우스가 요소위에서 벗어날때</td>
+                </tr>
+                
+                <tr>
+                    <td>onkeypress</td>
+                    <td>키보드 키를 눌렀다 뗄때</td>
+                </tr>
+                <tr>
+                    <td>onkeydown</td>
+                    <td>키보드 키를 눌를때</td>
+                </tr>
+                
+                <tr>
+                    <td>onkeyup</td>
+                    <td>키보드 키를 뗄때</td>
+                </tr>
+                <tr>
+                    <td>onchange</td>
+                    <td>요소의 값이 바뀔때</td>
+                </tr>
+                
+                <tr>
+                    <td>onsubmit</td>
+                    <td>폼제출 버튼 눌렀을때</td>
+                </tr>
+                
+                <tr>
+                    
+                </tr>
+                
+                <tr>
+                    <td>onload</td>
+                    <td>HTML을 모드 읽었을때</td>
+                </tr>
+                <tr>
+                    <td>onabort</td>
+                    <td>페이지나 이미지 읽기가 중단되었을때</td>
+                </tr>
+                
+                <tr>
+                    <td>onunloadWeb</td>
+                    <td>다른페이지로 전환할때</td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+        <br><br><br>
+
+    </body>
+
+
+</html>
