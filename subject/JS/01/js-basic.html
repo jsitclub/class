@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="../../css/main.css">
+        <script src="js-basic.js"></script>
+        <script>
+            function printHtml(param)
+            {
+               // 참고로 값을 바로 읽어오고 싶으면 
+               // document.getElementById('txt_html').value를 사용
+               
+               document.getElementById('lblResult').innerHTML = param.value;
+            }
+            
+             function printConsole(param)
+            {
+                console.log(param.value);
+            }
+            function printAlert()
+            {
+                var a=prompt("입력값");
+                alert(a);
+            }
+            
+            function printConfirm()
+            {
+                var a=confirm("진행 하겠습니까?");
+                alert(a);
+            }
+            
+            function chgCSS()
+            {
+                document.getElementById("btnChgCSS").style.width = "300px";
+                document.getElementById("btnChgCSS").style.color = "red";
+                document.getElementById("btnChgCSS").style.fontsize = "50";
+                document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue";
+                alert(a);
+            }
+            
+        </script>
+        
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../JS.html">Home</a></li>
+            <li><a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst" target="_blank">javascript연습</a></li>
+            </ul>                
+        </nav>
+        
+        
+        <h1 class="title" id="js">JavaScript 개요</h1>
+        
+        <ul class="title-1">
+        <li> 자바스크립트는 웹 브라우저에서 동작하는 프로그래밍 언어 이다.</li>    
+        <li> 종류 </li>   
+            <ul class="title-2" >
+                <li>ECMAScript : 자바스크립트의 공식적 이름 (<a href="https://www.w3schools.com/js/js_versions.asp">JavaScript Versions</a>)</li>
+            <li>클라이언트 측 자바스크립트 : 웹브라우저에서 동작되는 자바스크립트로 브라우저에 내장되어있다.(ECMAScript(중심언어) + 브라우저 API)</li>
+            <li>서버 측 자바스크립트 : 웹서버에서 동작되는 자바스크립트로 서버에 설치하여 사용한다.(Node.js 등)</li>
+            </ul>
+        
+        <li>자바스크립트는 페이지를 동적으로 표현할 수 있게 한다.
+            <ul class="title-2" >
+            <li>
+                <input type="button" value ="skyblue"  style="font-size:30px" onclick ='document.getElementsByTagName("body")[0].style.backgroundColor = "skyblue"'>
+                <input style="font-size:30px" type="button" value ="gold"onclick ='document.getElementsByTagName("body")[0].style.backgroundColor = "gold"'>
+            </li>
+            
+            <li>
+                <input style="font-size:30px" type="button" value ="hello" onclick ="document.getElementById('text').innerHTML = 'hello';">
+            <span style="font-size:30px" id="text"> ??? </span>
+                
+            </li>
+                
+            <li>
+                <!-- 외부파일에 정의된 함수 호출                  -->
+                <input style="font-size:30px" type="button" value ="print number" onclick ="printNum();">
+            </li>
+            
+            </ul>        
+        <li> 실행방법
+            <ul class="title-2" >
+            <li>html문서에 삽입하여 사용하는 방법</li>
+                <ul class="title-3" >
+                <li>이벤트 속성에 작성</li>
+                    <ul class="title-4" >
+                    <li> &lt; input type = "button" onclick = "javascript코드" &gt; </li>
+                    </ul>
+                    
+                <li>&lt; script &gt;태그 사용 </li>
+                    <ul class="title-4" >
+                    <li>  &lt; script &gt; javascript코드 &lt; /script &gt;</li>
+                    </ul>
+                    
+                <li>외부 js파일(*.js)과 연결 </li>
+                    <ul class="title-4" >
+                    <li> &lt; script src="파일경로" &gt; &lt; /script &gt; </li>
+                    </ul> 
+        
+                </ul>
+            <li>개발자도구의 웹브라우저 콘솔(개발자 도구)에서 실행하는 방법. </li>
+        
+            </ul>
+        </ul>
+        
+        
+        <h1 class="title" id="basic">기본 규칙</h1>
+        <ul class="title-1" >
+
+        <li>대문자와 소문자를 구별한다.</li>
+        <li>문장의 끝에 세미콜론(;)을 반드시 붙인다.</li>
+        <li>주석문은 /* 문장 */  또는 // 으로 만든다.</li>
+        <li>여러 문장은 { }으로 감싼다.</li>
+
+        </ul>
+        
+        
+        
+        <h1 class="title" id="output">출력방법</h1>
+        <ul class="title-1" >
+
+        <li>브라우저 console에 출력</li>
+            <ul class="title-2" >
+            <li>console.log("hello javascript")</li>
+            </ul>
+
+        <li>경고창에 출력</li>
+            <ul class="title-2" >
+            <li>alert("hello javascript")</li>
+            </ul>
+
+        <li>html 태그에 출력</li>
+            <ul class="title-2" >
+            <li>document.write("hello javascript")</li>
+            <li>document.getElementById('text').innerHTML = 'hello'</li>
+
+            <li>예</li>
+            <div class="code-border">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+
+                <div class="code-sub">
+                &lt;body&gt;
+
+                    <div class="code-sub">
+                    &lt;h2>My First JavaScript&lt;/h2&gt;<br>
+
+                    &lt;button type="button"
+                    onclick="document.getElementById('demo').innerHTML = Date()"&gt;<br>
+                    Click me to display Date and Time.&lt;/button&gt;<br>
+
+                    &lt;p id="demo"&gt;&lt;/p&gt;
+                    </div>
+
+                &lt;/body&gt;
+                </div>
+            &lt;/html&gt; 
+            </div>
+            </ul>
+        </ul>
+        
+    </body>
+
+
+</html>

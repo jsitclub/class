@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="Keyword" content="javascript,ECMAScript" />
+        
+        <link rel="stylesheet" type="text/css" href="../../css/main.css">
+        <style>
+        
+            td{
+                height:50px;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+         <nav >
+            <ul>
+            <li><a href="../HTML-CSS.html">Home</a></li>
+            </ul>           
+        </nav>
+        
+        
+        <ul class="title-1">
+        <li>웹 페이지에서 데이터를 입력을 받아야 할때는 HTML의 input태그를 이용한다. 하지만 입력된 내용을 처리하는것은 주로 javascript 나 서버 프로그래밍이 필요하다.</li>    
+        </ul>
+         
+        <h1 class="title" id="input">&lt; input &gt;</h1>
+        
+        <ul class="title-1">
+        <li> &lt; input &gt;태그는 사용자에게 입력을 받을수 있는 태그로,type 속성에 의해 여러모양으로 사용 된다.</li>    
+        <li> 속성</li>
+            
+            <ul class="title-2">
+            <li>type : input 종류 설정 (다음표 참조)</li>
+            <li>name : 태그 이름 설정</li>
+            <li>value : 입력값</li>
+            <li>maxlength : 입력가능 길이</li>
+            <li>readOnly : 읽기전용</li>                
+            <li>disabled : 활성화여부</li>                
+            <li>checked : 선택된 값(체크박스,라디오버튼에서 사용)</li>
+                <ul class="title-2">
+                <li>true / false</li>
+                </ul>
+                
+                <ul class="title-3">
+                <table width=100%>
+                    <tr>
+                        <th width=10%>값</th>
+                        <th width=10%>모양</th>
+                        <th width=20%>설명</th>
+                        <th width=70%>예</th>
+                    </tr>  
+                    <tr>
+                        <td>사용안함</td>
+                        <td><input  value="input" name="input" ></td>
+                        <td>텍스트 입력</td>
+                        <td>&lt;input  value="input" name="input"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>text</td>
+                        <td><input  type="text" value="text" name="text" ></td>
+                        <td>text 입력</td>
+                        <td>&lt;input  type="text" value="text" name="text"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>number</td>
+                        <td><input  type="number" value="number" name="number" ></td>
+                        <td>숫자입력</td>
+                        <td>&lt;input   type="number" value="number" name="number"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>password</td>
+                        <td><input  type="password" value="password" name="password" ></td>
+                        <td>패스워드 입력</td>
+                        <td>&lt;input type="password" value="password" name="password"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>email</td>
+                        <td><input  type="email" value="email" name="email" ></td>
+                        <td>이메일 입력</td>
+                        <td>&lt;input type="email" value="email" name="email"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>tel</td>
+                        <td><input  type="tel" value="tel" name="tel" ></td>
+                        <td>tel입력</td>
+                        <td>&lt;input type="tel" value="tel" name="tel"&gt;</td>
+                    </tr> 
+                    
+                    <tr>
+                        <td>url</td>
+                        <td><input  type="url" value="url" name="url" ></td>
+                        <td>url입력</td>
+                        <td>&lt;input type="url" value="url" name="url" &gt;</td>
+                    </tr>
+                    <tr>
+                        <td>search</td>
+                        <td><input  type="search" value="search" name="search" ></td>
+                        <td>search 입력</td>
+                        <td>&lt;input type="search" value="search" name="search" &gt;</td>
+                    </tr>
+                    <tr>
+                        <td>button</td>
+                        <td><input type="button" value="button" name="button"></td>
+                        <td>버튼</td>
+                        <td>&lt;input type="button" value="button" name="button"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>reset</td>
+                        <td><input type="reset" value="reset" name="reset" ></td>
+                        <td>폼의 입력값들을 초기화</td>
+                        <td>&lt;input type="reset" value="reset" name="reset"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>submit</td>
+                        <td><input type="submit" value="submit" name="submit" ></td>
+                        <td>폼의 입력값들을 전송</td>
+                        <td>&lt;input type="submit" value="submit" name="submit"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>checkbox</td>
+                        <td>
+                        <!-- value는 반드시 넣어준다. -->
+                        <input type="checkbox" value="1" name="checkbox">독서
+                        <input type="checkbox" value="2" name="checkbox" checked="true" >코딩
+                        <input type="checkbox" value="3" name="checkbox" >운동
+                        </td>
+                        <td>체크박스</td>
+                        <td>&lt;input type="checkbox" value="1" name="checkbox"&gt; 독서<br>
+                            &lt;input type="checkbox" value="2" name="checkbox" checked="true"&gt; 코딩</td>
+                    </tr> 
+                    <tr>
+                        <td>radio</td>
+                        <td>
+                            <!-- name이 값아야 그룹으로 묶임 value는 반드시 넣어준다.-->
+                            <input type="radio" value="1" name="radio"  checked="true">자전거
+                            <input type="radio" value="2" name="radio" >도보
+                            <input type="radio" value="3" name="radio" >버스
+                            
+                        </td>
+                        <td>라디오버튼(옵션버튼)</td>
+                        <td>
+                            &lt;input type="radio" value="1" name="radio"  checked="true"&gt; 자전거<br>
+                            &lt;input type="radio" value="2" name="radio" &gt; 도보
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>range</td>
+                        <td><input  type="range" value="range" name="range" ></td>
+                        <td>range 입력</td>
+                        <td>&lt;input  type="range" value="range" name="range"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>file</td>
+                        <td><input  type="file" value="file" name="file" ></td>
+                        <td>파일선택</td>
+                        <td>&lt;input  type="file" value="file" name="file" &gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>color</td>
+                        <td><input  type="color" value="color" name="color" ></td>
+                        <td>색선택</td>
+                        <td>&lt;input  type="color" value="color" name="color"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>date</td>
+                        <td><input  type="date" value="2020-04-09" name="date" ></td>
+                        <td>날짜입력</td>
+                        <td>&lt;input   type="date" value="2020-04-09" name="date"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>time</td>
+                        <td><input  type="time" value="12:00" name="time" ></td>
+                        <td>시간입력</td>
+                        <td>&lt;input type="time" value="12:00" name="time"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>datetime-local</td>
+                        <td><input  type="datetime-local" value="2020-04-09T12:00" name="datetime-local" ></td>
+                        <td>날짜/시간입력</td>
+                        <td>&lt;input type="datetime-local" value="2020-04-09T12:00" name="datetime-local"&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>month</td>
+                        <td><input  type="month" value="2020-04" name="month" ></td>
+                        <td>월입력</td>
+                        <td>&lt;input type="month" value="2020-04" name="month" &gt;</td>
+                    </tr>
+                    <tr>
+                        <td>week</td>
+                        <td><input  type="week" value="2020-W04" name="week" ></td>
+                        <td>주입력</td>
+                        <td>&lt;input type="week" value="2020-W04" name="week" "&gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>image</td>
+                        <td><input  type="image" src="../resource/img_submit.gif" name="image" ></td>
+                        <td>submit 버튼의 이미지 정의</td>
+                        <td>&lt;input type="image" src="../resource/img_submit.gif" name="image" &gt;</td>
+                    </tr> 
+                    <tr>
+                        <td>hidden</td>
+                        <td><input  type="hidden" value="hidden" name="hidden" ></td>
+                        <td>숨겨진 값 처리</td>
+                        <td>&lt;input type="hidden" value="hidden" name="hidden" &gt;</td>
+                    </tr> 
+                    
+                </table>
+                
+               
+                </ul>
+            
+                
+            </ul>
+        </ul>
+            
+        
+        <h1 class="title" id="select">&lt; select &gt;</h1>        
+        <ul class="title-1">
+        <li> &lt; select &gt;태그는 여러값에서 선택할 있는 태그</li>    
+        <li> 속성</li>
+            <ul class="title-2">
+            
+            <li>name : 태그 이름 설정</li>
+            <li>size : 크기(보여줄 행의 갯수)</li>
+                <ul class="title-2">
+                <li> 
+                    size ="4" : 
+                    <select id="attribute" size="4">
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+                    
+                    size 미설정 : 
+                    <select id="attribute">
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+
+                </li>
+                </ul>
+            <li>multiple : 다중선택 여부</li>
+                <ul class="title-2">
+                <li>shift를 누른후 선택</li>
+                <li> 
+                    다중선택 설정: 
+                    <select id="attribute" size="4" multiple>
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+                    
+                    다중선택 미설정 : 
+                    <select id="attribute" size="4">
+                        <option value="text" >text</option>
+                        <option value="number" >number</option>
+                        <option value="password" >password</option>
+                        <option value="email" >email</option>
+                        <option value="tel" >tel</option>
+                        <option value="url" >url</option>
+                        <option value="search" >search</option>
+                        <option value="button" >button</option>
+                        <option value="reset" >reset</option>
+                        <option value="submit" >submit</option>
+                    </select>
+
+                </li>
+                </ul>
+            <li>disabled : 활성화 여부</li>
+            </ul>
+            
+            <li>예</li>
+            <ul class="code-border" >
+                <li>&lt;select&gt;</li>
+                <li class="code-sub">&lt;option value="text" &gt; text&lt;/option &gt;</li>
+                <li class="code-sub">&lt; option value="number" &gt; number&lt;/option &gt;</li>
+                <li>&lt;/select &gt;</li>
+            </ul>
+            
+        </ul>
+        
+        <h1 class="title" id="textarea">&lt; textarea &gt;</h1>        
+        <ul class="title-1">
+        <li> &lt; textarea &gt; 는 여러줄을 입력할수 있는 태그이다. </li>    
+        <li> 속성</li>
+            <ul class="title-2">
+            <li>name : 태그 이름 설정</li>
+            <li>rows : 행의 수(세로길이)</li>
+            <li>cols : 열의 수(가로길이)</li>
+            <li>readOnly : 읽기전용</li>
+            <li>disabled : 활성화여부</li>
+            </ul>
+        <li style="list-style-type:none"><textarea rows="5" cols="30"></textarea></li>
+        </ul>
+        
+        
+        
+        <h1 class="title" id="button">&lt; button &gt;</h1>        
+        <ul class="title-1">
+        <li> &lt; button &gt; 은 &lt; input type="button"&gt; 과 모양은 비슷하지만 닫는태그 &lt; /button &gt; 가 필요하고 사이값으로 텍스트나 이미지가 들어갈수 있다는 차이가 있다. </li>    
+        <li> 속성</li>
+            <ul class="title-2">
+            <li>type</li>
+                <ul class="title-3">
+                <li>button</li>
+                <li>reset</li>
+                <li>submit</li>
+                </ul>
+            <li>value : 버튼의 text</li>
+            <li>name : 버튼의 이름</li>
+            </ul>
+        </ul>
+       
+    </body>
+
+
+</html>
